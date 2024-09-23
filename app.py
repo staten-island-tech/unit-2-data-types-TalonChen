@@ -18,13 +18,38 @@ y = ["bad","okay","good","great"]
 z = ["0% tip", "15% tip", "20% tip", "25% tip"]
 service = y
 
-if service == y[0]:
-    print; z[0]
-elif y[1]:
-    print; z[1]
-elif y[2]:
-    print; z[2]
+if service == (y[0]):
+    print; (z[0])
+elif (y[1]):
+    print; (z[1])
+elif (y[2]):
+    print; (z[2])
 else:
-    print; z[3]
+    print; (z[3])
 
 service = "bad"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
