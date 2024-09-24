@@ -1,7 +1,3 @@
-#Typing something into input = String, Anything with ""
-#Search somethings up if you forgot the code or don't know
-#5%2 = 1 If x%2 == 0
-
 ###Determines if the number is even or odd
 '''
 x = 12412412
@@ -12,19 +8,44 @@ else:
     print("odd")
 '''
 
-x = 100
-bill = x
-y = ["bad","okay","good","great"]
-z = ["0% tip", "15% tip", "20% tip", "25% tip"]
-service = y
 
-if service == (y[0]):
-    print; (z[0])
-elif (y[1]):
-    print; (z[1])
-elif (y[2]):
-    print; (z[2])
-else:
-    print; (z[3])
+'''
+def calculate_tip(bill, service_quality):
+    tip_percentages = {
+        'bad': 0.0,
+        'okay': 0.15,
+        'good': 0.20,
+        'great': 0.25
+    }
+    tip_percentage = tip_percentages.get(service_quality.lower(), 0.0)
+    
+    tip = bill * tip_percentage
 
-service = "bad"
+    return tip
+
+bill_amount = float(input("Enter the bill amount: "))
+
+service = input("Rate the service (bad, okay, good, great): ")
+
+tip_amount = calculate_tip(bill_amount, service)
+
+print(f"The tip amount is: ${tip_amount}")
+'''
+
+def print_factors(number):
+    number = input("What number do you want to find the factors of: ")
+    
+
+
+
+
+'''def print_factors(x):
+   print("The factors of",x,"are:")
+   for i in range(1, x + 1):
+       if x % i == 0:
+           print(i)
+
+num = 12
+
+print_factors(num)
+'''
