@@ -8,7 +8,7 @@ else:
     print("odd")
 '''
 
-
+###Tip
 '''
 def calculate_tip(bill, service_quality):
     tip_percentages = {
@@ -32,20 +32,46 @@ tip_amount = calculate_tip(bill_amount, service)
 print(f"The tip amount is: ${tip_amount}")
 '''
 
-def print_factors(number):
-    number = input("What number do you want to find the factors of: ")
+
+###Finds the factors of numbers
+'''
+def find_factors(n):
+    if n <= 0:
+        return "Please enter a positive integer."
     
+    factors = []
+    for i in range(1, n + 1):
+        if n % i == 0:
+            factors.append(i)
+    
+    return factors
 
+def main():
+    try:
+        number = int(input("Enter a positive integer: "))
+        factors = find_factors(number)
+        print(f"The factors of {number} are: {factors}")
+    except ValueError:
+        print("Invalid input. Please enter a valid integer.")
 
+if __name__ == "__main__":
+    main()
+'''
 
+###Greatest common factor 
+'''
+def gcd(a, b):
+    while b:
+        a, b = b, a % b
+    return abs(a)
 
-'''def print_factors(x):
-   print("The factors of",x,"are:")
-   for i in range(1, x + 1):
-       if x % i == 0:
-           print(i)
-
-num = 12
-
-print_factors(num)
+# Get user input
+try:
+    num1 = int(input("Enter the first number: "))
+    num2 = int(input("Enter the second number: "))
+    
+    result = gcd(num1, num2)
+    print(f"The GCF of {num1} and {num2} is {result}.")
+except ValueError:
+    print("Please enter valid integers.")
 '''
