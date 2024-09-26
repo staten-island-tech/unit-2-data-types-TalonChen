@@ -73,5 +73,18 @@ try:
     result = gcd(num1, num2)
     print(f"The GCF of {num1} and {num2} is {result}.")
 except ValueError:
-    print("Please enter valid integers.")
-'''
+    print("Please enter valid integers.")'''
+
+
+
+
+def gcd(a,b):
+    if a%i == 0 and b%i == 0:
+        
+
+a = int(input("Enter the first number: "))
+b = int(input("Enter your second number: "))
+
+
+for i in (a, a+1):
+    if a%i == 0 and b%i ==0:
