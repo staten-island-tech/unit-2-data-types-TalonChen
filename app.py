@@ -81,10 +81,9 @@ except ValueError:
 def gcd(a,b):
     if a%i == 0 and b%i == 0:
         
-
-a = int(input("Enter the first number: "))
+        a = int(input("Enter the first number: "))
 b = int(input("Enter your second number: "))
 
 
 for i in (a, a+1):
-    if a%i == 0 and b%i ==0:
+    if a%i == 0 and b%i ==0:""
