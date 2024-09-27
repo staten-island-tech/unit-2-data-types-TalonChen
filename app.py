@@ -36,54 +36,41 @@ print(f"The tip amount is: ${tip_amount}")
 ###Finds the factors of numbers
 '''
 def find_factors(n):
-    if n <= 0:
-        return "Please enter a positive integer."
-    
     factors = []
-    for i in range(1, n + 1):
+    for i in range(1, abs(n) + 1):  
         if n % i == 0:
             factors.append(i)
-    
     return factors
 
-def main():
-    try:
-        number = int(input("Enter a positive integer: "))
-        factors = find_factors(number)
-        print(f"The factors of {number} are: {factors}")
-    except ValueError:
-        print("Invalid input. Please enter a valid integer.")
-
-if __name__ == "__main__":
-    main()
+try:
+    a = int(input("Enter a number to find its factors: "))
+    
+    factors = find_factors(a)
+    print(f"The factors of {a} are: {factors}")
+except ValueError:
+    print("Please enter a valid integer.")
 '''
 
 ###Greatest common factor 
 '''
-def gcd(a, b):
-    while b:
-        a, b = b, a % b
-    return abs(a)
-
-# Get user input
 try:
-    num1 = int(input("Enter the first number: "))
-    num2 = int(input("Enter the second number: "))
+    a = int(input("Enter the first number: "))
+    b = int(input("Enter the second number: "))
     
-    result = gcd(num1, num2)
-    print(f"The GCF of {num1} and {num2} is {result}.")
+    while b != 0:    #Until b does equal to 0: keep doing this proccess
+        remainder = a % b   #Remainder is a % b     ##Let's say a = 24, and b is 20: a%b = 4   remainder = 4 
+        a = b                                                          # a = 20  b = 4   # remainder = 0    ## a=4 b=0 -- So GCf = A
+        b = remainder
+    
+    print(f"The greatest common factor is: {a}")
 except ValueError:
-    print("Please enter valid integers.")'''
+    print("Enter valid integers."
+    '''
 
 
 
 
-def gcd(a,b):
-    if a%i == 0 and b%i == 0:
-        
-        a = int(input("Enter the first number: "))
-b = int(input("Enter your second number: "))
 
 
-for i in (a, a+1):
-    if a%i == 0 and b%i ==0:""
+
+
