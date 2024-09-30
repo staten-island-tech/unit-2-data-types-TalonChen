@@ -64,8 +64,8 @@ try:
     
     print(f"The greatest common factor is: {a}")
 except ValueError:
-    print("Enter valid integers."
-    '''
+    print("Enter valid integers.")
+'''
 
 
 
