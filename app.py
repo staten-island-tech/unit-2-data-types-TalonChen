@@ -36,11 +36,11 @@ print(f"The tip amount is: ${tip_amount}")
 '''
 
 ###Finds the factors of numbers
-
+'''
 def find_factors(n):
     factors = []
     for i in range(1, abs(n) + 1):  
-        if n % i == 0:
+        if n % i == 0: 
             factors.append(i)
     return factors
 
@@ -51,10 +51,10 @@ try:
     print(f"The factors of {a} are: {factors}")
 except ValueError:
     print("Please enter a valid integer.")
-
+'''
 
 ###Greatest common factor 
-'''
+
 try:
     a = int(input("Enter the first number: "))
     b = int(input("Enter the second number: "))
@@ -67,4 +67,4 @@ try:
     print(f"The greatest common factor is: {a}")
 except ValueError:
     print("Enter valid integers.")
-'''
+
