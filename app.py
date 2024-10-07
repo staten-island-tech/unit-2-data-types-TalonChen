@@ -54,7 +54,7 @@ except ValueError:
 '''
 
 ###Greatest common factor 
-'''
+
 try:
     a = int(input("Enter the first number: "))
     b = int(input("Enter the second number: "))
@@ -67,19 +67,3 @@ try:
     print(f"The greatest common factor is: {a}")
 except ValueError:
     print("Enter valid integers.")
-
-'''
-
-def x(num1, num2):
-    last_divisor = 1
-    for i in range(1, min(num1, num2) + 1):
-        if num1 % i == 0 and num2 % i == 0:
-            last_divisor = i
-    return last_divisor
-
-try:
-    a = int(input("Enter the first number: "))
-    b = int(input("Enter the second number: "))
-    print(f"The greatest common factor of {num1} and {num2} is {find_common_divisor(num1, num2)}.")
-except ValueError:
-    print("Please enter valid integers.")
