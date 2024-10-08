@@ -16,10 +16,10 @@ while True:
         break
     print("That's not a positive integer, you noob!")
 
-madlib = (f"Once upon a time, there was a person named {celebrity_guest}."
-          f"This person decided to {verb1} a {noun}."
-          f"Because of this, they also decided to {verb2} until it turned dark."
-          f"The summary of the person's actions resulted in the gaining of {number} coins.")
+madlib = (f"Once upon a time, there was a person named {celebrity_guest}. "
+          f"This person decided to {verb1} on a {noun}. "
+          f"Because of this, they also decided to {verb2} until it turned dark. "
+          f"The summary of the person's actions resulted in the gaining of {number} coins. ")
 
 
 print(madlib)
