@@ -14,7 +14,7 @@ while True:
     if number.isdigit() and int(number) > 0:
         number = int(number)
         break
-    print("That's not a positive integer, you noob!")
+    print("That's not a positive integer!")
 
 madlib = (f"Once upon a time, there was a person named {celebrity_guest}. "
           f"This person decided to {verb1} on a {noun}. "

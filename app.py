@@ -8,19 +8,19 @@ try:
     else:
         print("odd")
 except ValueError: 
-    ("Please enter a VALID INTEGER")
+    print("Please enter a VALID INTEGER")
 '''
 
-###Tip
+###Tip  $$
 '''
 def calculate_tip(bill, service_quality):
-    tip_percentages = {                #Dictionary :)
+    tip_percentages = {                #Dictionary 
         'bad': 0.0,
         'okay': 0.15,
         'good': 0.20,
         'great': 0.25
     }
-    tip_percentage = tip_percentages.get(service_quality.lower(), 0.0)  #Basically just turns anything from- bAd, BAD, Bad will all become bad, and if it's not found, then it will return to 0
+    tip_percentage = tip_percentages.get(service_quality.lower(), 0.0)  #urns anything from- bAd, BAD, Bad will all become bad, and if it's not found, then it will return to 0 (i think)
     
     tip = bill * tip_percentage
 
@@ -48,22 +48,23 @@ try:
     a = int(input("Enter a number to find its factors: "))
     
     factors = find_factors(a)
-    print(f"The factors of {a} are: {factors}")
+    print(f"The factors of {a} are: {factors}")  
 except ValueError:
     print("Please enter a valid integer.")
 '''
 
-###Greatest common factor 
+###Greatest common factor :)
+def find_gcf(a, b):
+    c = min(a, b)
+    gcf = 1
+    
+    for i in range(1, c + 1):
+        if a % i == 0 and b % i == 0:
+            gcf = i  
+    
+    return gcf
 
-try:
-    a = int(input("Enter the first number: "))
-    b = int(input("Enter the second number: "))
-    
-    while b != 0:    #Until b does equal to 0: keep doing this proccess
-        remainder = a % b   #Remainder is a % b     ##Let's say a = 24, and b is 20: a%b = 4   remainder = 4 
-        a = b                                                          # a = 20  b = 4   # remainder = 0    ## a=4 b=0 -- So GCf = A
-        b = remainder
-    
-    print(f"The greatest common factor is: {a}")
-except ValueError:
-    print("Enter valid integers.")
+a = int(input("First number: "))
+b = int(input("Second number: "))
+result = find_gcf(a, b)
+print(f"The GCF of {a} and {b} is {result}.")
